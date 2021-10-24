@@ -14,7 +14,7 @@ public class Hooks {
     // we can run certain code before and after each scenario and after each scenario that tagged with a certain tag
 
 
-    @Before
+    @Before("@ui")
     public void setUpDriver(){
         System.out.println("THis is FROM @Before inside hooks class");
         //set up implicit wait
@@ -22,7 +22,7 @@ public class Hooks {
         Driver.getDriver().manage().window().maximize();
     }
 
-    @After
+    @After("@ui")
     public void tearDown(){
         System.out.println("THIS IS FROM @After inside hooks class");
         //
