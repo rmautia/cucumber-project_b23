@@ -66,5 +66,11 @@ public class WebOrderLoginStepDef {
     }
 
 
+    @When("user provide username {string} and password {string}")
+    public void isProvideUsernameAndPassword(String username, String password) {
 
+        // username = "whatever is provided in the scenario step "
+        // password = "Whatever is provided in the scenario step"
+        loginPage.login(username, password);
+    }
 }
