@@ -1,6 +1,6 @@
 ## below line is how we add tag to a feature at feature level
   ## you can add more than one tags on anything
-@Calculator
+@Calculator @non_ui
 Feature: Calculator feature
   As a user
   I should be able to use the calculator
