@@ -20,5 +20,14 @@ Feature: Demonstrating the data table feature for cucumber
       | dog    |
       | turtle |
       | zebra  |
-    When I call their names
-    Then They come to me.
+    When I call their names with below names
+      | kira    |
+      | Doro    |
+      | Tito    |
+      | Zemfira |
+
+    Then They come to me with below noise
+      | horse  | Nai  |
+      | dog    | Woof |
+      | turtle | Hiss |
+      | zebra  | Bro  |
