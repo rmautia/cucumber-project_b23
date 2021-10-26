@@ -18,7 +18,7 @@ Feature: Calculator feature with data
       |   4   |   7   |     11         |
       |   6   |  11   |     17         |
       |   4   |  41   |     45         |
-      |   7   |  01   |     8          |
+      |   7   |   1   |     8          |
       |   9   |  22   |     31         |
 
 
