@@ -1,16 +1,28 @@
+@ui @library_login
 Feature: Logging into library app
   as a user
   I should be able to log in  to library app
 
-  Scenario Outline: Login with valid credentials
 
+  Scenario Outline: Login with valid credentials
     Given user is at library login page
     When user use username "<email>" and passcode "<password>"
     Then user should be at dashboard page
     Examples:
-      | email               | password  |
+      | email | password |
       | student42@library   | Sdet2022* |
       | student43@library   | Sdet2022* |
       | student44@library   | Sdet2022* |
       | librarian54@library | Sdet2022* |
       | librarian15@library | Sdet2022* |
+
+
+
+
+#    Examples:
+#      | email               | password  |
+#      | student42@library   | Sdet2022* |
+#      | student43@library   | Sdet2022* |
+#      | student44@library   | Sdet2022* |
+#      | librarian54@library | Sdet2022* |
+#      | librarian15@library | Sdet2022* |
