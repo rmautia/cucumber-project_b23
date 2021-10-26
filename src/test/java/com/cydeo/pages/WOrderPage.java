@@ -4,6 +4,10 @@ import com.cydeo.utility.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class WOrderPage {
     @FindBy(xpath = "//h2[normalize-space(.)='Order']")
@@ -59,6 +63,26 @@ public class WOrderPage {
 
     public WOrderPage(){
         PageFactory.initElements(Driver.getDriver(), this);
+    }
+
+    /**
+     * get all product options from product dropdown list
+     * @return List<String> that hold all the options text
+     */
+    public List<String> getAllProductOptionFromList (){
+
+        Select selectObj = new Select(productDropDown);
+
+        List<WebElement> allProductOptions = selectObj.getOptions();
+
+        List<String> actualOptions = new ArrayList<>();
+
+        for (WebElement eachOption : allProductOptions) {
+            System.out.println("eachOption.getText() = " + eachOption.getText());
+            actualOptions.add(eachOption.getText());
+        }
+        return actualOptions;
+
     }
 
 
