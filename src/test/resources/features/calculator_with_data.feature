@@ -17,9 +17,9 @@ Feature: Calculator feature with data
       |   3   |   4   |     7          |
       |   4   |   7   |     11         |
       |   6   |  11   |     17         |
-      |   4   |  41   |     90         |
-      |   7   |  01   |     13         |
-      |   9   |  22   |     15         |
+      |   4   |  41   |     45         |
+      |   7   |  01   |     8          |
+      |   9   |  22   |     31         |
 
 
 #  Scenario: Add 2 numbers example 1
