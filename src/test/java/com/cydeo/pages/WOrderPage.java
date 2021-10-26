@@ -9,7 +9,7 @@ public class WOrderPage {
     @FindBy(xpath = "//h2[normalize-space(.)='Order']")
     public WebElement header ;
 
-    @FindBy(id = "ct100_MainContent-fmwOrder_ddlProduct")
+    @FindBy(id = "ctl00_MainContent_fmwOrder_ddlProduct")
     public WebElement productDropDown ;
 
     @FindBy(id = "ctl00_MainContent_fmwOrder_txtQuantity")
