@@ -34,9 +34,8 @@ public class GoogleHomePage {
     }
 
     public void searchKeyWord( String keyword ){
-        this.translate.click();
         this.searchBox.sendKeys( keyword );
-        this.searchBtn.click();
+        this.searchBtn.submit();
     }
 
     public boolean isAT(){

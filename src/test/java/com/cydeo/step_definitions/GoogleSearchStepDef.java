@@ -1,6 +1,7 @@
 package com.cydeo.step_definitions;
 
 import com.cydeo.pages.GoogleHomePage;
+import com.cydeo.utility.BrowserUtil;
 import com.cydeo.utility.Driver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -36,6 +37,7 @@ public class GoogleSearchStepDef {
 
     @And("the title should start with {string}")
     public void theTitleShouldStartWith(String keyword) {
+
 
        assertTrue (Driver.getDriver().getTitle().startsWith(keyword));
 
