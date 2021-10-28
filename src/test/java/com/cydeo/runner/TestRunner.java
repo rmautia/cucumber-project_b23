@@ -22,7 +22,7 @@ import org.junit.runner.RunWith;
                   glue = "com/cydeo/step_definitions",
                   plugin = { "pretty","html:target/cucumber_report.html" },
                   dryRun = false,
-                   tags ="@go_home"
+                   tags ="@ui1"
                   )
 public class TestRunner {
 

@@ -1,6 +1,7 @@
 package com.cydeo.step_definitions;
 
 import com.cydeo.pages.WLoginPage;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -70,6 +71,26 @@ public class DataTablesStepDefs {
         for (Map<String, Object> eachRowMap : productMapLst) {
             System.out.println("eachRowMap = " + eachRowMap);
         }
+    }
+
+    @And("I have another product reference without header")
+    public void headlessTable(List< List<String> > productInfoList) {
+        /**
+         *       | MyMoney     | 100   | 0.08     |
+         *       | FamilyAlbum | 80    | 0.15     |
+         *       | ScreenSaver | 20    | 0.1      |
+         */
+        System.out.println("productInfoList = " + productInfoList);
+
+        // get me entire 3rd row
+        List<String> thirdRow = productInfoList.get(2);
+        System.out.println("thirdRow = " + thirdRow);
+        // get the price value of third row
+        System.out.println("thirdRow price is = " + thirdRow.get(1));
+
+        // get the discount column of first row
+        System.out.println("First row 3rd column value productInfoList.get(0).get(2) = "
+                + productInfoList.get(0).get(2));
     }
 }
 
