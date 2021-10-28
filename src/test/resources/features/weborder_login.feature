@@ -26,7 +26,7 @@ Feature: Web order app login
 #    whatever is enclosed inside quotation "" will be sent a parameter value
 #    step definition will look like this
 #     @When("user provide username {string} and password {string}")
-    When user provide username "Teter" and password "test"
+    When user provide username "Tester" and password "test"
     Then we should see all order page
 
 
