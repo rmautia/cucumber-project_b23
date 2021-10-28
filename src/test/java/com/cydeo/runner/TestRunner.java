@@ -21,10 +21,12 @@ import org.junit.runner.RunWith;
 @CucumberOptions(features = "src/test/resources/features",
                   glue = "com/cydeo/step_definitions",
                   plugin = { "pretty","html:target/cucumber_report.html",
-                             "rerun:target/rerun.txt" }, // store the failed file into rerun.txt
+                             "rerun:target/rerun.txt", // store the failed file into rerun.txt
+                             "me.jvt.cucumber.report.PrettyReports:target",  // fancy report
+                  },
+
                   publish = true,
-                  dryRun = false,
-                   tags ="@blah"
+                  dryRun = false
                   )
 public class TestRunner {
 
