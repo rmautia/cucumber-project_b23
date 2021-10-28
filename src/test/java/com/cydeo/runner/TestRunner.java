@@ -21,8 +21,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(features = "src/test/resources/features",
                   glue = "com/cydeo/step_definitions",
                   plugin = { "pretty","html:target/cucumber_report.html" },
+                  publish = true,
                   dryRun = false,
-                   tags ="@ui1"
+                   tags ="@blah"
                   )
 public class TestRunner {
 
