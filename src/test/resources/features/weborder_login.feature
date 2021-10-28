@@ -30,6 +30,7 @@ Feature: Web order app login
     Then we should see all order page
 
 
+      @blah
   Scenario: User login with wrong credentials
     When user provide username "Blah" and password "Blah"
     Then we should still be at login page
