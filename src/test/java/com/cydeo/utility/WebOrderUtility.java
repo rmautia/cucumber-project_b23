@@ -6,12 +6,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-// THIS AIN'T NO TEST CLASS SO WE CAN NOT EXTEND TESTBASE
+// THIS IS NOT TEST CLASS SO WE CAN NOT EXTEND TESTBASE
 // IT SIMPLY DOES NOT MAKE SENSE
 public class WebOrderUtility {
     /**
      * A method for logging into Web Order practice site from login page
-     * @param driverParam we don't have access to driver as we did in Test classes, (replaced)
+     * param driverParam we don't have access to driver as we did in Test classes, (replaced)
      *                    so we need to pass it as parameter when calling this method
      */
     public static void login(){
@@ -29,7 +29,7 @@ public class WebOrderUtility {
 
     /**
      * A method for logging into using username password to Web Order practice site
-     * @param driverParam we don't have access to driver as we did in Test classes,
+     * driverParam we don't have access to driver as we did in Test classes,
      *                    so we need to pass it as parameter when calling this method
      * @param username username for web order practice site
      * @param password password for web order practice site
@@ -49,7 +49,7 @@ public class WebOrderUtility {
 
     /**
      * A method for logging out if user is logged in
-     * @param driverParam WebDriver instance need to be passed from outside
+     * param driverParam WebDriver instance need to be passed from outside
      */
     public static void logout(){
 

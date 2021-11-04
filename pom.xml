@@ -86,25 +86,24 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>3.0.0-M5</version>
+                    <!-- this is where we can tell sure fire plugin to run test in certain way   -->
+                    <configuration>
+                        <testFailureIgnore>true</testFailureIgnore>
+                        <runOrder>Alphabetical</runOrder>
+                        <parallel>methods</parallel>
+                        <!--                    <useUnlimitedThreads>true</useUnlimitedThreads>-->
+                        <threadCount>4</threadCount>
+                        <perCoreThreadCount>false</perCoreThreadCount>
+                        <includes>
+                            <include>**/*TestRunner.java</include>
+                            <!--                         <include>**/*FailedTestRunner.java</include>-->
+                        </includes>
+                    </configuration>
                 </plugin>
 
                 <plugin>
                     <artifactId>maven-project-info-reports-plugin</artifactId>
                     <version>3.0.0</version>
-                    <!-- this is where we can tell sure fire plugin to run test in certain way   -->
-                    <configuration>
-                        <testFailureIgnore>true</testFailureIgnore>
-                        <runOrder>Alphabetical</runOrder>
-                        <!--                        <parallel>methods</parallel>-->
-                        <!--                         <useUnlimitedThreads>true</useUnlimitedThreads>-->
-                        <threadCount>4</threadCount>
-                        <perCoreThreadCount>false</perCoreThreadCount>
-                        <includes>
-                            <include>**/*TestRunner.java</include>
-                            <!--                            <include>**/*FailedTestRunner.java</include>-->
-                        </includes>
-                    </configuration>
-
                 </plugin>
 
             </plugins>
